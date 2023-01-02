@@ -1,0 +1,13 @@
+h1 h2 h3 {
+  font-family: "Shrikhand", cursive;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.Header {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0px;
+  font-family: "Shrikhand", cursive;
+}/*# sourceMappingURL=main.css.map */
