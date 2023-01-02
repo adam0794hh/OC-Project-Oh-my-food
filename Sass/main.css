@@ -1,13 +1,183 @@
 h1 h2 h3 {
   font-family: "Shrikhand", cursive;
 }
-p {
-  font-family: 'Roboto', sans-serif;
+
+body {
+  margin: 0;
 }
 
+/* Header Logo */
 .Header {
   display: flex;
   justify-content: center;
   padding: 15px 0px;
   font-family: "Shrikhand", cursive;
+}
+
+/* Barre de recherche */
+.SearchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #EAEAEA;
+}
+.SearchBar .SearchBar__icon {
+  margin-right: 10px;
+}
+.SearchBar .SearchBar__text {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Description et fonctionnement*/
+.DescriFonct {
+  display: flex;
+  flex-direction: column;
+}
+
+.Description {
+  background: #f6f6f6;
+  padding: 45px 20px 57px 20px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.Description .Description__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.Description .Description__text {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 10px 0 20px 0;
+}
+.Description .Description__button {
+  width: 218px;
+  height: 50px;
+  font-size: 16px;
+  border: 0px #D2D2D2;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+
+.Fonctionnement {
+  font-family: "Roboto", sans-serif;
+  padding: 50px 5%;
+}
+.Fonctionnement .Fonctionnement__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.Fonctionnement .Fonctionnement__card {
+  width: 100%;
+  height: 73px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 25px 0 25px 12px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  background-color: #F6F6F6;
+}
+.Fonctionnement .Fonctionnement__card .Fonctionnement__card__elipse {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: -12px;
+  top: 22px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+  font-size: 12px;
+}
+.Fonctionnement .Fonctionnement__card .Fonctionnement__card__icon {
+  display: flex;
+  color: #7e7e7e;
+  margin: 0 27px 0 26px;
+  width: 20px;
+}
+.Fonctionnement .Fonctionnement__card .Fonctionnement__card__text {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Restaurants*/
+.Restaurants {
+  background: #f6f6f6;
+  padding: 55px 5%;
+  font-family: "Roboto", sans-serif;
+}
+.Restaurants .Restaurants__title {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 25px;
+}
+.Restaurants .Restaurants__card {
+  position: relative;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 18px;
+}
+.Restaurants .Restaurants__card .Restaurants__card__img {
+  width: 100%;
+  height: 175px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 20px 20px 0 0;
+}
+.Restaurants .Restaurants__card .Restaurant__Card__Description {
+  padding: 16px 13px;
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+}
+.Restaurants .Restaurants__card .Restaurant__Card__Description .Restaurant__Card__Description__title {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 5px;
+}
+.Restaurants .Restaurants__card .Restaurant__Card__Description .Restaurant__Card__Description__text {
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  margin-top: 0px;
+}
+.Restaurants .Restaurants__card .Restaurant__Card__Description .fa-heart {
+  position: absolute;
+  right: 8%;
+  top: 24px;
+  font-size: 32px;
+  cursor: pointer;
+  background-color: white;
+}
+.Restaurants .Restaurants__small--Card::before {
+  display: flex;
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 29px;
+  border-radius: 2px;
+  content: "Nouveau";
+  background: #99E2D0;
+  color: #008766;
+  font-size: 14px;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
