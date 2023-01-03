@@ -55,14 +55,17 @@ body {
 .Description .Description__button {
   width: 218px;
   height: 50px;
-  font-size: 16px;
   border: 0px #D2D2D2;
-  font-family: "Roboto", sans-serif;
-  color: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   padding: 10px 15px;
   border-radius: 25px;
+}
+.Description .Description__button > a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 .Fonctionnement {
@@ -187,4 +190,29 @@ body {
   color: #008766;
   font-size: 14px;
   font-weight: bold;
+}
+
+/* ------------FOOTER--------*/
+.Footer {
+  background: #353535;
+  padding: 25px;
+}
+.Footer .Footer__logo {
+  height: 17px;
+  width: 98px;
+  margin-bottom: 15px;
+  filter: invert(1);
+}
+.Footer .Footer__liens {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.Footer .Footer__liens > a {
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.Footer .Footer__liens > a > i {
+  width: 20px;
 }/*# sourceMappingURL=main.css.map */
