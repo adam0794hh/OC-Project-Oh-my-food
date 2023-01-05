@@ -1,6 +1,5 @@
-h1 h2 h3 {
-    font-family: 'Shrikhand', cursive;
-}
+
+
 body {
     margin: 0;
 }
@@ -11,6 +10,7 @@ body {
     padding: 15px 0px;
     font-family: 'Shrikhand', cursive;
 }
+
 /* Barre de recherche */
 .SearchBar{
     display: flex;
@@ -161,14 +161,13 @@ body {
             }
             .fa-heart {
                 position: absolute;
-                right: 8%;
+                right: 5%;
                 top: 24px;
                 font-size: 32px;
-                cursor: pointer;
-                background-color: white;
+                cursor: pointer;  
             }
-            
-        }
+        }    
+        
     }
     .Restaurants__small--Card::before {
         display: flex;
@@ -196,7 +195,9 @@ body {
         height: 17px;
         width: 98px;
         margin-bottom: 15px;
-        filter: invert(1);
+        color: white;
+        font-family:'Shrikhand', cursive;
+        font-weight: 400;
     }
     .Footer__liens {
         display: flex;
@@ -212,3 +213,65 @@ body {
         }
     }
 }
+
+/*--------------- Responsive Tablette----------*/
+@media screen and (min-width: 768px) {
+    .Fonctionnement {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        .Fonctionnement__title {
+           position: absolute;
+           top: 0px;
+        }
+        .Fonctionnement__card {
+            margin-right: 12px;
+            .Fonctionnement__card__icon {
+                margin-right: 10px;
+            }
+            .Fonctionnement__card__text {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+    }
+}
+/*--------------- Responsive Desktop----------*/
+@media screen and (min-width: 992px) {
+    .Restaurants {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        padding: 130px 5%;
+        .Restaurants__title {
+            position: absolute;
+            top: 40px;
+        }
+        .Restaurants__card {
+            width: 100%;
+            margin-right: 20px;
+            .Restaurant__Card__Description {
+                border-radius: 0px 0px 20px 20px;
+                padding: 7px 13px;
+            }
+        }
+    }
+    .Footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        height: 134px;
+        .Footer__logo {
+            margin-right: 50px;
+        }
+        .Footer__liens {
+            display: flex;
+            flex-direction: row;
+            > a {
+                margin-right: 90px;
+            }
+        }
+    }
+}
+
