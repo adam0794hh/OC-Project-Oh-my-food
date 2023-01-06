@@ -1,0 +1,156 @@
+/*# sourceMappingURL=main.css.map */
+body{
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+/* -------Header---------*/
+header {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    position: relative;
+    .header__retour {
+        position: absolute;
+        left: 6%;
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+    }
+}
+.MainRestaurants {
+    display: flex;
+    flex-direction: column;
+    .imageRestaurant {
+        width: 100%;
+        object-fit: cover;
+        max-height: 300px;
+    }
+    .Menu {
+        display: flex;
+        flex-direction: column;
+        padding: 34px 4% 0 4%;
+        margin-top: -20px;
+        position: relative;
+        border-radius: 20px 20px 0 0;
+        background: #f7f7f7;
+        .Menu__button{
+            width: 210px;
+            height: 40px;
+            font-size: 18px ;
+            font-weight: 500;
+            font-family: "Roboto", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+            background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+            padding: 10px 15px;
+            border-radius: 35px;
+            margin-top: 50px;
+            margin-left: 22%;
+            color: white;
+
+        }
+        .Menu__title {
+            font-family: "Shrikhand";
+            font-size: 28px;
+            font-style: italic;
+            font-weight: 400;
+            padding-left: 3%;
+        }
+        .fa-heart {
+            position: absolute;
+            right: 5%;
+            font-size: 28px;
+        }
+        .Menu__Resto {
+            font-family: "Roboto", sans-serif;
+            margin-bottom: 45px;
+            margin-left: 0;
+            .Menu__Resto__Title {
+                text-transform: uppercase;
+                margin-left: 6px;
+                margin-top: 40px;
+                padding-bottom: 9px;
+                font-size: 16px;
+                font-weight: 400;
+                position: relative;
+            }
+            .Menu__Resto__Title::after {
+                content: "";
+                position: absolute;
+                height: 3px;
+                width: 40px;
+                bottom: 0;
+                left: 0;
+                background: #99E2D0;
+            }
+            .Menu__Resto__Card {
+                background: white;
+                border-radius: 20px;
+                display: flex;
+                justify-content: space-between;
+                overflow: hidden;
+                white-space: nowrap;
+                margin-top: 14px;
+                box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+                .Menu__Resto__Card__text {
+                    padding: 15px 0 15px 10px;
+                    min-width: 0;
+                    .Menu__Resto__Card__text__title {
+                        font-weight: bold;
+                        font-family:"Roboto", sans-serif;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        margin-bottom: 7px;
+                    }
+                    .Menu__Resto__Card__text__Description {
+                        font-size: 18px;
+                        font-weight: 300;
+                        font-family:"Roboto", sans-serif;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        margin: 0;
+                    }
+                }
+                .Menu__Resto__Card__price{
+                    margin-left: 5px;
+                    margin-right: 20px;
+                    padding-bottom: 15px;
+                    font-weight: bold;
+                    align-self: flex-end;
+                }
+            }
+        }
+
+    }
+
+}
+.Footer {
+    background: #353535;
+    padding: 25px;
+    .Footer__logo {
+        height: 17px;
+        width: 98px;
+        margin-bottom: 15px;
+        color: white;
+        font-family:'Shrikhand', cursive;
+        font-weight: 400;
+    }
+    .Footer__liens {
+        display: flex;
+        flex-direction: column;
+        font-family: "Roboto", sans-serif;
+        > a {
+            color: white;
+            text-decoration: none;
+            margin-top: 10px;
+            > i {
+                width: 20px;
+            }
+        }
+    }
+}
