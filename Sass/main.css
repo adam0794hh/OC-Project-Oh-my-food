@@ -1,3 +1,36 @@
+.Header {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0px;
+  font-family: "Shrikhand", cursive;
+}
+
+.Footer {
+  background: #353535;
+  padding: 25px;
+}
+.Footer .Footer__logo {
+  height: 17px;
+  width: 98px;
+  margin-bottom: 15px;
+  color: white;
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+}
+.Footer .Footer__liens {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.Footer .Footer__liens > a {
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.Footer .Footer__liens > a > i {
+  width: 20px;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -5,14 +38,6 @@ a {
 
 body {
   margin: 0;
-}
-
-/* Header Logo */
-.Header {
-  display: flex;
-  justify-content: center;
-  padding: 15px 0px;
-  font-family: "Shrikhand", cursive;
 }
 
 /* Barre de recherche */
@@ -39,7 +64,7 @@ body {
 }
 
 .Description {
-  background: #f6f6f6;
+  background: #F6F6F6;
   padding: 45px 20px 57px 20px;
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -58,7 +83,7 @@ body {
   height: 50px;
   border: 0px #D2D2D2;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   padding: 10px 15px;
   border-radius: 25px;
 }
@@ -66,7 +91,11 @@ body {
   text-decoration: none;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
-  color: white;
+  color: #F6F6F6;
+}
+.Description .Description__button:hover {
+  filter: brightness(1.1);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 
 .Fonctionnement {
@@ -85,7 +114,7 @@ body {
   position: relative;
   margin: 25px 0 25px 12px;
   border-radius: 20px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   background-color: #F6F6F6;
   cursor: pointer;
 }
@@ -100,7 +129,7 @@ body {
   height: 24px;
   border-radius: 50%;
   background-color: #9356DC;
-  color: white;
+  color: #F6F6F6;
   font-size: 12px;
 }
 .Fonctionnement .Fonctionnement__card .Fonctionnement__card__icon {
@@ -138,7 +167,7 @@ body {
   position: relative;
   display: block;
   border-radius: 15px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   margin-bottom: 18px;
 }
 .Restaurants .Restaurants__card .Restaurants__card__img {
@@ -153,7 +182,7 @@ body {
 .Restaurants .Restaurants__card .Restaurant__Card__Description {
   padding: 16px 13px;
   position: relative;
-  background-color: white;
+  background-color: #F6F6F6;
   border-radius: 15px;
 }
 .Restaurants .Restaurants__card .Restaurant__Card__Description .Restaurant__Card__Description__title {
@@ -175,6 +204,18 @@ body {
   font-size: 32px;
   cursor: pointer;
 }
+.Restaurants .Restaurants__card .Restaurant__Card__Description .fas {
+  opacity: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 650ms;
+}
+.Restaurants .Restaurants__card .Restaurant__Card__Description .fas:hover {
+  background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  transform: scale(1.15);
+  opacity: 1;
+}
 .Restaurants .Restaurants__small--Card::before {
   display: flex;
   position: absolute;
@@ -193,32 +234,6 @@ body {
 }
 
 /* ------------FOOTER--------*/
-.Footer {
-  background: #353535;
-  padding: 25px;
-}
-.Footer .Footer__logo {
-  height: 17px;
-  width: 98px;
-  margin-bottom: 15px;
-  color: white;
-  font-family: "Shrikhand", cursive;
-  font-weight: 400;
-}
-.Footer .Footer__liens {
-  display: flex;
-  flex-direction: column;
-  font-family: "Roboto", sans-serif;
-}
-.Footer .Footer__liens > a {
-  color: white;
-  text-decoration: none;
-  margin-top: 10px;
-}
-.Footer .Footer__liens > a > i {
-  width: 20px;
-}
-
 /*--------------- Responsive Tablette----------*/
 @media screen and (min-width: 768px) {
   .Fonctionnement {

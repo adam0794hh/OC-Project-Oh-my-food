@@ -23,6 +23,7 @@ header .header__retour {
   color: black;
 }
 
+/*----------Content-------------*/
 .MainRestaurants {
   display: flex;
   flex-direction: column;
@@ -43,7 +44,7 @@ header .header__retour {
   background: #f7f7f7;
 }
 .MainRestaurants .Menu .Menu__button {
-  width: 210px;
+  width: 186px;
   height: 40px;
   font-size: 18px;
   font-weight: 500;
@@ -51,13 +52,18 @@ header .header__retour {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+  background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   padding: 10px 15px;
   border-radius: 35px;
-  margin-top: 50px;
-  margin-left: 22%;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
   color: white;
+}
+.MainRestaurants .Menu .Menu__button:hover {
+  filter: brightness(1.1);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 .MainRestaurants .Menu .Menu__title {
   font-family: "Shrikhand";
@@ -81,9 +87,12 @@ header .header__retour {
   margin-left: 6px;
   margin-top: 40px;
   padding-bottom: 9px;
-  font-size: 16px;
-  font-weight: 400;
   position: relative;
+}
+.MainRestaurants .Menu .Menu__Resto .Menu__Resto__Title > h5 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
 }
 .MainRestaurants .Menu .Menu__Resto .Menu__Resto__Title::after {
   content: "";
@@ -116,7 +125,7 @@ header .header__retour {
   margin-bottom: 7px;
 }
 .MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card .Menu__Resto__Card__text .Menu__Resto__Card__text__Description {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
   text-overflow: ellipsis;
@@ -142,6 +151,7 @@ header .header__retour {
   color: white;
   font-family: "Shrikhand", cursive;
   font-weight: 400;
+  margin-top: 2px;
 }
 .Footer .Footer__liens {
   display: flex;
@@ -155,4 +165,24 @@ header .header__retour {
 }
 .Footer .Footer__liens > a > i {
   width: 20px;
+}
+
+/*--------------- Responsive Tablette----------*/
+@media screen and (min-width: 768px) {
+  .MainRestaurants {
+    display: flex;
+  }
+  .MainRestaurants .Menu {
+    padding: 34px 15% 0 15%;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+  }
+  .MainRestaurants .Menu .fa-heart {
+    right: 20%;
+  }
+  .MainRestaurants .Menu .Menu__button {
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
