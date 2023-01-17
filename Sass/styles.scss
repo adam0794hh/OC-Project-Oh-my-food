@@ -219,21 +219,63 @@ header {
 /*--------------- Responsive Tablette----------*/
 @media screen and (min-width: 768px) {
     .MainRestaurants {
-       display: flex;
-       .Menu {
-        padding: 34px 15% 0 15%;
-        margin-right: auto;
-        margin-left: auto;
+        display: flex;
         align-items: center;
-        .fa-heart {
-            right: 20%;
-        }
-            .Menu__button {
-                margin-bottom: 40px;
-                margin-top: 0;
+        .Menu {
+            .Menu__Resto {
+                .Menu__Resto__Card {
+                    width: 450px;
+                }
             }
-         
-       }
+        }
+    }
+    
+}
 
+@media screen and (min-width: 1200px) {
+    .MainRestaurants {
+        width: 100%;
+        .Menu {
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            .Menu__title {
+                width: 100%;
+                padding-left: 8%;
+            }
+            .Menu__Resto {
+                display: flex;
+                .Menu__Resto__List0 {
+                    margin-left: 0;
+                }
+                .Menu__Resto__List1 {
+                    margin-left: 5%;
+                }
+                    .Menu__Resto__Card {
+                        width: 315px;
+                    }
+                
+            }
+            .Menu__button {
+                margin: 5px 25% 60px 25%;
+            }
+
+        }
+    }
+    .Footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        height: 134px;
+        .Footer__logo {
+            margin-right: 50px;
+        }
+        .Footer__liens {
+            display: flex;
+            flex-direction: row;
+            > a {
+                margin-right: 90px;
+            }
+        }
     }
 }
