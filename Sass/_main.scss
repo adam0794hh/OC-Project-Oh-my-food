@@ -89,13 +89,16 @@ body {
         border: 0px #D2D2D2;
         box-shadow: $box-shadow;
         background-image: $linear-gradient;
-        padding: 10px 15px;
-        border-radius: 25px;
+        padding: 5px 10px;
+        border-radius: 50px;
         text-decoration: none;
         font-size: 16px;
         font-family: $font-family;
         color: $color-white;
         cursor: pointer;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
     }
     .Description__button:hover {
         filter: brightness(1.1);
@@ -193,17 +196,18 @@ body {
                 font-weight: 700;
                 font-family: $font-family;
                 margin-bottom: 5px;
+                margin-top: 0;
             }
             .Restaurant__Card__Description__text {
                 font-size: 17px;
                 font-weight: 300;
                 font-family: $font-family;
-                margin-top: 0px;
+                margin: 0px;
             }
             .fa-heart {
                 position: absolute;
                 right: 5%;
-                top: 24px;
+                top: 15px;
                 font-size: 32px;
                 cursor: pointer;
                 
@@ -282,6 +286,7 @@ body {
         .Restaurants__card {
             width: 100%;
             margin-right: 20px;
+            margin-bottom: 0;
             .Restaurant__Card__Description {
                 border-radius: 0px 0px 20px 20px;
                 padding: 7px 13px;
