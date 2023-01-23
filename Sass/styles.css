@@ -98,6 +98,7 @@ header .header__retour {
   right: 5%;
   font-size: 28px;
   cursor: pointer;
+  margin-top: 5px;
 }
 .MainRestaurants .Menu .iconanim {
   opacity: 0;
@@ -138,6 +139,7 @@ header .header__retour {
   background: #99E2D0;
 }
 .MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card {
+  height: 70px;
   background: white;
   border-radius: 20px;
   display: flex;
@@ -151,7 +153,7 @@ header .header__retour {
   cursor: pointer;
 }
 .MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card .Menu__Resto__Card__text {
-  padding: 15px 0 15px 10px;
+  padding: 15px 0 15px 15px;
   min-width: 0;
   flex: 1;
 }
@@ -161,6 +163,7 @@ header .header__retour {
   text-overflow: ellipsis;
   overflow: hidden;
   margin-bottom: 7px;
+  margin-top: 0;
 }
 .MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card .Menu__Resto__Card__text .Menu__Resto__Card__text__Description {
   font-size: 16px;
@@ -191,6 +194,18 @@ header .header__retour {
 .MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card .Menu__Resto__Card__Check > i {
   transform: rotate(180deg);
   transition: all 0.7s ease;
+}
+.MainRestaurants .Menu .Menu__Resto .delay-0 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.MainRestaurants .Menu .Menu__Resto .delay-1 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.MainRestaurants .Menu .Menu__Resto .delay-2 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 .MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card:hover .Menu__Resto__Card__Check {
   margin-right: 0;

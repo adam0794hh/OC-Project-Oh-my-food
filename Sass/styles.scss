@@ -82,6 +82,7 @@ header {
             right: 5%;
             font-size: 28px;
             cursor: pointer;
+            margin-top: 5px;
         }
         .iconanim {
             opacity: 0;
@@ -121,6 +122,7 @@ header {
                 background: #99E2D0;
             }
             .Menu__Resto__Card {
+                height: 70px;
                 background: white;
                 border-radius: 20px;
                 display: flex;
@@ -132,8 +134,8 @@ header {
                 animation: slide 1s ease both;
                 cursor: pointer;
                 
-            .Menu__Resto__Card__text {
-                    padding: 15px 0 15px 10px;
+                .Menu__Resto__Card__text {
+                    padding: 15px 0 15px 15px;
                     min-width: 0;
                     flex: 1;
                     .Menu__Resto__Card__text__title {
@@ -142,6 +144,7 @@ header {
                         text-overflow: ellipsis;
                         overflow: hidden;
                         margin-bottom: 7px;
+                        margin-top: 0;
                     }
                     .Menu__Resto__Card__text__Description {
                         font-size: 16px;
@@ -176,6 +179,15 @@ header {
                     }
                 }
                 
+            }
+            .delay-0 {
+                animation-delay: calc(0.5s * 0);
+            }
+            .delay-1 {
+                animation-delay: calc(0.5s * 1);
+            }
+            .delay-2 {
+                animation-delay: calc(0.5s * 2);
             }
             .Menu__Resto__Card:hover {
                 .Menu__Resto__Card__Check{
