@@ -81,6 +81,7 @@ header .header__retour {
   margin-left: auto;
   margin-right: auto;
   color: white;
+  transition: all 0.25s ease;
 }
 .MainRestaurants .Menu .Menu__button:hover {
   filter: brightness(1.1);
@@ -200,12 +201,16 @@ header .header__retour {
           animation-delay: 0s;
 }
 .MainRestaurants .Menu .Menu__Resto .delay-1 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 .MainRestaurants .Menu .Menu__Resto .delay-2 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.MainRestaurants .Menu .Menu__Resto .delay-3 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 .MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card:hover .Menu__Resto__Card__Check {
   margin-right: 0;
