@@ -1,3 +1,6 @@
+ol {
+  list-style: none;
+}
 .Header {
   display: flex;
   justify-content: center;
