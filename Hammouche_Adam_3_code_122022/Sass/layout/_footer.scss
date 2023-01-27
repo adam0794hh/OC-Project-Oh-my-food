@@ -1,0 +1,25 @@
+.Footer {
+    background: #353535;
+    padding: 25px;
+    .Footer__logo {
+        height: 17px;
+        width: 98px;
+        margin-bottom: 15px;
+        color: white;
+        font-family:'Shrikhand', cursive;
+        font-weight: 400;
+    }
+    .Footer__liens {
+        display: flex;
+        flex-direction: column;
+        font-family: "Roboto", sans-serif;
+        > a {
+            color: white;
+            text-decoration: none;
+            margin-top: 10px;
+            > i {
+                width: 20px;
+            }
+        }
+    }
+}

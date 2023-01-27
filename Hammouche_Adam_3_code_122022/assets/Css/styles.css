@@ -1,0 +1,303 @@
+/*# sourceMappingURL=main.css.map */
+body {
+  margin: 0;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    transform: translateY(40%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(40%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+/* -------Header---------*/
+header {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  align-items: center;
+  position: relative;
+}
+header .header__retour {
+  position: absolute;
+  left: 6%;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+/*----------Content-------------*/
+.MainRestaurants {
+  display: flex;
+  flex-direction: column;
+}
+.MainRestaurants .imageRestaurant {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 300px;
+}
+.MainRestaurants .Menu {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 4% 0 4%;
+  margin-top: -20px;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  background: #f7f7f7;
+}
+.MainRestaurants .Menu .Menu__button {
+  width: 186px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+  background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  padding: 10px 15px;
+  border-radius: 35px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  transition: all 0.25s ease;
+}
+.MainRestaurants .Menu .Menu__button:hover {
+  filter: brightness(1.1);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+.MainRestaurants .Menu .Menu__title {
+  font-family: "Shrikhand";
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  padding-left: 3%;
+}
+.MainRestaurants .Menu .fa-heart {
+  position: absolute;
+  right: 5%;
+  font-size: 28px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.MainRestaurants .Menu .iconanim {
+  opacity: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 650ms;
+}
+.MainRestaurants .Menu .iconanim:hover {
+  background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  transform: scale(1.15);
+  opacity: 1;
+}
+.MainRestaurants .Menu .Menu__Resto {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 45px;
+  margin-left: 0;
+}
+.MainRestaurants .Menu .Menu__Resto .Menu__Resto__Title {
+  text-transform: uppercase;
+  margin-left: 6px;
+  margin-top: 40px;
+  padding-bottom: 9px;
+  position: relative;
+}
+.MainRestaurants .Menu .Menu__Resto .Menu__Resto__Title > h5 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+.MainRestaurants .Menu .Menu__Resto .Menu__Resto__Title::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 40px;
+  bottom: 0;
+  left: 0;
+  background: #99E2D0;
+}
+.MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card {
+  height: 70px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 14px;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  -webkit-animation: slide 1s ease both;
+          animation: slide 1s ease both;
+  cursor: pointer;
+}
+.MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card .Menu__Resto__Card__text {
+  padding: 15px 0 15px 15px;
+  min-width: 0;
+  flex: 1;
+}
+.MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card .Menu__Resto__Card__text .Menu__Resto__Card__text__title {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 7px;
+  margin-top: 0;
+}
+.MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card .Menu__Resto__Card__text .Menu__Resto__Card__text__Description {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0;
+}
+.MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card .Menu__Resto__Card__price {
+  margin-left: 5px;
+  margin-right: 20px;
+  font-weight: bold;
+  align-self: flex-end;
+}
+.MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card .Menu__Resto__Card__Check {
+  width: 59px;
+  background: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  margin-right: -60px;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+}
+.MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card .Menu__Resto__Card__Check > i {
+  transform: rotate(180deg);
+  transition: all 0.7s ease;
+}
+.MainRestaurants .Menu .Menu__Resto .delay-0 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.MainRestaurants .Menu .Menu__Resto .delay-1 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.MainRestaurants .Menu .Menu__Resto .delay-2 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.MainRestaurants .Menu .Menu__Resto .delay-3 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card:hover .Menu__Resto__Card__Check {
+  margin-right: 0;
+}
+.MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card:hover .Menu__Resto__Card__Check > i {
+  transform: rotate(0deg);
+}
+
+.Footer {
+  background: #353535;
+  padding: 25px;
+}
+.Footer .Footer__logo {
+  height: 17px;
+  width: 98px;
+  margin-bottom: 15px;
+  color: white;
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  margin-top: 2px;
+}
+.Footer .Footer__liens {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.Footer .Footer__liens > a {
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.Footer .Footer__liens > a > i {
+  width: 20px;
+}
+
+/*--------------- Responsive Tablette----------*/
+@media screen and (min-width: 768px) {
+  .MainRestaurants {
+    display: flex;
+    align-items: center;
+  }
+  .MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .MainRestaurants {
+    width: 100%;
+  }
+  .MainRestaurants .Menu {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .MainRestaurants .Menu .Menu__title {
+    width: 100%;
+    padding-left: 8%;
+  }
+  .MainRestaurants .Menu .Menu__Resto {
+    display: flex;
+  }
+  .MainRestaurants .Menu .Menu__Resto .Menu__Resto__List0 {
+    margin-left: 0;
+  }
+  .MainRestaurants .Menu .Menu__Resto .Menu__Resto__List1 {
+    margin-left: 5%;
+  }
+  .MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card {
+    width: 315px;
+  }
+  .MainRestaurants .Menu .Menu__button {
+    margin: 5px 25% 60px 25%;
+  }
+  .Footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 134px;
+  }
+  .Footer .Footer__logo {
+    margin-right: 50px;
+  }
+  .Footer .Footer__liens {
+    display: flex;
+    flex-direction: row;
+  }
+  .Footer .Footer__liens > a {
+    margin-right: 90px;
+  }
+}/*# sourceMappingURL=styles.css.map */
