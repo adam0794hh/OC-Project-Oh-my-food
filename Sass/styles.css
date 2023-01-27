@@ -306,6 +306,7 @@ header .header__retour {
     height: 134px;
     position: absolute;
     width: 96%;
+    bottom: -100%;
   }
   .Footer .Footer__logo {
     margin-right: 50px;
