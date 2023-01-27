@@ -294,6 +294,22 @@ body {
   font-size: 14px;
   font-weight: bold;
 }
+.Restaurants .Restaurants__small--Card1::before {
+  display: flex;
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 29px;
+  border-radius: 2px;
+  content: "Nouveau";
+  background: #99E2D0;
+  color: #008766;
+  font-size: 14px;
+  font-weight: bold;
+}
 
 /* ------------FOOTER--------*/
 /*--------------- Responsive Tablette----------*/
@@ -335,6 +351,9 @@ body {
     width: 100%;
     margin-right: 20px;
     margin-bottom: 0;
+  }
+  .Restaurants .Restaurants__small--Card1::before {
+    display: none;
   }
   .Restaurants .Restaurants__card .Restaurant__Card__Description {
     border-radius: 0px 0px 20px 20px;

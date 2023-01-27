@@ -252,8 +252,20 @@ header .header__retour {
     display: flex;
     align-items: center;
   }
+  .MainRestaurants .Menu {
+    padding: 34px 8% 0 8%;
+  }
+  .MainRestaurants .Menu .Menu__Resto {
+    display: flex;
+  }
+  .MainRestaurants .Menu .Menu__Resto .Menu__Resto__List0 {
+    margin-right: 30px;
+  }
+  .MainRestaurants .Menu .Menu__Resto .Menu__Resto__List1 {
+    margin-right: 30px;
+  }
   .MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card {
-    width: 450px;
+    width: 215px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -264,6 +276,7 @@ header .header__retour {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 34px 0 0 0;
   }
   .MainRestaurants .Menu .Menu__title {
     width: 100%;
@@ -291,6 +304,8 @@ header .header__retour {
     flex-direction: row-reverse;
     align-items: center;
     height: 134px;
+    position: absolute;
+    width: 96%;
   }
   .Footer .Footer__logo {
     margin-right: 50px;

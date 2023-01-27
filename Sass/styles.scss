@@ -238,9 +238,18 @@ header {
         display: flex;
         align-items: center;
         .Menu {
+            padding: 34px 8% 0 8%;
             .Menu__Resto {
+                display: flex;
+                .Menu__Resto__List0 {
+                    margin-right: 30px;
+                }
+                .Menu__Resto__List1 {
+                    margin-right: 30px;
+                }
+
                 .Menu__Resto__Card {
-                    width: 450px;
+                    width: 215px;
                 }
             }
         }
@@ -255,6 +264,7 @@ header {
             flex-direction: row;
             justify-content: center;
             flex-wrap: wrap;
+            padding: 34px 0 0 0;
             .Menu__title {
                 width: 100%;
                 display: flex;
@@ -286,6 +296,8 @@ header {
         flex-direction: row-reverse;
         align-items: center;
         height: 134px;
+        position: absolute;
+        width: 96%;
         .Footer__logo {
             margin-right: 50px;
         }
