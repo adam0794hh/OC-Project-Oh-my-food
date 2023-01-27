@@ -257,18 +257,21 @@ header {
             flex-wrap: wrap;
             .Menu__title {
                 width: 100%;
-                padding-left: 8%;
+                display: flex;
+                justify-content: center;
+            }
+            .fa-heart {
+                right: 32%;
             }
             .Menu__Resto {
                 display: flex;
+                flex-direction: column;
                 .Menu__Resto__List0 {
                     margin-left: 0;
                 }
-                .Menu__Resto__List1 {
-                    margin-left: 5%;
-                }
+                
                     .Menu__Resto__Card {
-                        width: 315px;
+                        width: 610px;
                     }
                 
             }

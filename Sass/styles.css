@@ -267,19 +267,21 @@ header .header__retour {
   }
   .MainRestaurants .Menu .Menu__title {
     width: 100%;
-    padding-left: 8%;
+    display: flex;
+    justify-content: center;
+  }
+  .MainRestaurants .Menu .fa-heart {
+    right: 32%;
   }
   .MainRestaurants .Menu .Menu__Resto {
     display: flex;
+    flex-direction: column;
   }
   .MainRestaurants .Menu .Menu__Resto .Menu__Resto__List0 {
     margin-left: 0;
   }
-  .MainRestaurants .Menu .Menu__Resto .Menu__Resto__List1 {
-    margin-left: 5%;
-  }
   .MainRestaurants .Menu .Menu__Resto .Menu__Resto__Card {
-    width: 315px;
+    width: 610px;
   }
   .MainRestaurants .Menu .Menu__button {
     margin: 5px 25% 60px 25%;
